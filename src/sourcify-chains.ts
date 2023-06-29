@@ -325,6 +325,7 @@ const sourcifyChainsExtensions: SourcifyChainsExtensionsObject = {
     contractFetchAddress: "https://tanenbaum.io/" + BLOCKSCOUT_SUFFIX,
     txRegex: getBlockscoutRegex(),
   },
+<<<<<<< HEAD
   "570": {
     supported: true,
     monitored: false,
@@ -339,6 +340,21 @@ const sourcifyChainsExtensions: SourcifyChainsExtensionsObject = {
     txRegex: getBlockscoutRegex(),
     rpc: ["https://rpc-tanenbaum.rollux.com"],
   },
+||||||| 941886b
+=======
+  "570": {
+    supported: true,
+    monitored: false,
+    contractFetchAddress: "https://explorer.rollux.com/" + BLOCKSCOUT_SUFFIX,
+    txRegex: getBlockscoutRegex(),
+  },
+  "57000": {
+    supported: true,
+    monitored: false,
+    contractFetchAddress: "https://rollux.tanenbaum.io/" + BLOCKSCOUT_SUFFIX,
+    txRegex: getBlockscoutRegex(),
+  },
+>>>>>>> upstream/staging
   "40": {
     supported: true,
     monitored: false,
@@ -866,6 +882,14 @@ const sourcifyChainsExtensions: SourcifyChainsExtensionsObject = {
     monitored: false,
     contractFetchAddress: "https://explorer.zora.co/" + BLOCKSCOUT_SUFFIX,
     txRegex: getBlockscoutRegex(),
+  },
+  "6119": {
+    // UPTN Mainnet
+    supported: true,
+    monitored: false,
+    contractFetchAddress:
+      `https://glacier-api.avax.network/v1/chains/6119/` +
+      AVALANCHE_SUBNET_SUFFIX,
   },
 };
 
